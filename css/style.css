@@ -1,0 +1,574 @@
+@charset "utf-8";
+
+#wrap {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+header {
+	width: 1500px;
+	height: 170px;
+	margin-top: 20px;
+}
+
+/* 헤더 상단 */
+header > .utill {
+	width: 100%;
+	height: 50px;
+	border: 1px solid #dadce0;
+	box-sizing: border-box;
+}
+
+header > .utill > .utill-l {
+	float: left;
+	width: 300px;
+}
+header > .utill > .utill-l > ul {
+	display: flex;
+}
+header > .utill > .utill-l > ul > li {
+	height: 50px;
+	border-right: 1px solid #dadce0;
+}
+header > .utill > .utill-l > ul > li > a {
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	padding: 0 15px;
+}
+header > .utill > .utill-r {
+	float: right;
+	width: 470px;
+}
+header > .utill > .utill-r > .lst {
+	display: flex;
+	float: left;
+}
+header > .utill > .utill-r > .lst > li {
+	height: 50px;
+}
+header > .utill > .utill-r > .lst > li > a {
+	display: block;
+	line-height: 50px;
+
+	text-align: center;
+	padding: 0 15px;
+}
+header > .utill > .utill-r > .Select_lang {
+	position: relative;
+	float: left;
+	height: 50px;
+}
+header > .utill > .utill-r > .Select_lang > button {
+	position: relative;
+	top: -1px;
+	height: 50px;
+	padding: 0 30px 0 15px;
+	border: 1px solid #e5e7ee;
+
+	background: #f7f7f9;
+	font-size: 15px;
+	color: #3553bd;
+	box-sizing: border-box;
+}
+
+header > .utill > .utill-r > .Select_lang > button > span:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 12px;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	margin: auto 0;
+	border: 3px solid transparent;
+	border-top-color: #4f63a6;
+	border-bottom: 0;
+	transition: all .3s;
+}
+
+header > .utill > .utill-r > .Select_lang > .box_select {
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	margin-top: -1px;
+	border: 1px solid #e5e7ee;
+	border-top-width: 0;
+	box-sizing: border-box;
+	background: #fff;
+	z-index: 50;
+}
+
+header > .utill > .utill-r > .Select_lang > .on {
+	visibility: visible;
+}
+
+header > .utill > .utill-r > .Select_lang > .box_select > ol {
+	padding: 15px;
+}
+header > .utill > .utill-r > .Select_lang > .box_select > ol > li {
+	margin-bottom: 5px;
+}
+header > .utill > .utill-r > .Select_lang > .box_select > ol > li > a {
+	display: block;
+	padding: 3px;
+}
+
+/* 헤더 중단 */
+header > .middle {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 15px 0;
+}
+
+header > .middle > .logo {
+	display: block;
+	width: 169px;
+	height: 43px;
+	background-image: url(./../images/logo.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-indent: -9999px;
+}
+
+header > .middle  .srch_area {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 750px;
+	height: 40px;
+	margin-left: -375px;
+
+	box-sizing: border-box;
+}
+header > .middle  .srch_area > label {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+}
+header > .middle  .srch_area > input {
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgb(54, 54, 202);
+}
+header > .middle  .srch_area > button {
+	position: absolute;
+	top: 2px;
+	right: -4px;
+
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(./../images/serceh.png);
+	background-size: cover;
+
+	text-indent: -9999px;
+	border: none;
+	border: 1px solid rgb(54, 54, 202);
+}
+
+header > .middle > .time {
+	position: absolute;
+	right: 10px;
+	top: 12px;
+
+	font-size: 20px;
+	border: 1px solid #dedede;
+	background-color: rgb(175, 191, 236);
+}
+
+/* 헤더 하단 */
+header > div > .gnb_area {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #017de7;
+}
+header > div > .gnb_area > .gnb_sitemap {
+	position: absolute;
+	top: 0;
+	left: 30px;
+
+	width: 30px;
+}
+
+header > div > .gnb_area > .gnb_sitemap > a {
+	display: block;
+
+	height: 50px;
+	text-indent: -9999px;
+}
+
+header > div > .gnb_area > .gnb_sitemap > a > span {
+	display: block;
+	width: 30px;
+	height: 3px;
+
+	margin-bottom: 5px;
+	background-color: #fff;
+}
+
+header > div > .gnb_area > .gnb_sitemap > a > span:last-child {
+	margin: 0;
+}
+
+header > div > .gnb_area > .gnb {
+	position: absolute;
+	left: 80px;
+	top: 13px;
+
+	display: flex;
+	justify-content: space-around;
+	width: 900px;
+}
+header > div > .gnb_area > .gnb > li {
+}
+header > div > .gnb_area > .gnb > li > a {
+	display: block;
+	color: #fff;
+
+	font-size: 20px;
+	font-family: "Nanum Gothic";
+	font-weight: 600;
+	text-align: center;
+}
+
+header > div > .gnb_area > .sns-list {
+	position: absolute;
+	right: 35px;
+	top: 3px;
+
+	display: flex;
+	justify-content: space-around;
+	width: 350px;
+}
+header > div > .gnb_area > .sns-list > li {
+	display: block;
+	width: 40px;
+}
+header > div > .gnb_area > .sns-list > li:nth-of-type(1) {
+	background-image: url(./../images/sp_main.png);
+	background-position: -228px -86px;
+}
+header > div > .gnb_area > .sns-list > li:nth-of-type(2) {
+	background-image: url(./../images/sp_main.png);
+	background-position: -272px -38px;
+}
+header > div > .gnb_area > .sns-list > li:nth-of-type(3) {
+	background-image: url(./../images/sp_main.png);
+	background-position: -316px -38px;
+}
+header > div > .gnb_area > .sns-list > li:nth-of-type(4) {
+	background-image: url(./../images/sp_main.png);
+	background-position: -360px -38px;
+}
+
+header > div > .gnb_area > .sns-list > li > a {
+	display: block;
+	height: 44px;
+	text-indent: -9999px;
+}
+
+/* section 시작 */
+
+section {
+	position: relative;
+	width: 100%;
+	height: 2142px;
+	margin-top: 40px;
+	outline: 1px solid red;
+}
+
+/* section left_inr */
+
+section > .left_inr {
+	position: relative;
+	width: 70%;
+	height: 100%;
+	outline: 1px solid red;
+	background-color: #fff;
+}
+
+section > .left_inr > .dokdo_information {
+	position: absolute;
+	left: 150px;
+	outline: 1px solid blue;
+}
+
+section > .left_inr > .dokdo_information > nav {
+	position: relative;
+	width: 750px;
+	height: 500px;
+	overflow: hidden;
+}
+
+section > .left_inr > .dokdo_information > nav > .slides-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	display: flex;
+	justify-content: space-between;
+	width: calc(750px * 7);
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li {
+	width: 750px;
+	height: 500px;
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li:nth-of-type(1) {
+	background-image: url(./../images/행정구역.png);
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li:nth-of-type(2) {
+	background-image: url(./../images/독도표기법.png);
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li:nth-of-type(3) {
+	background-image: url(./../images/독도이름.png);
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li:nth-of-type(4) {
+	background-image: url(./../images/독도공시지가.png);
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li:nth-of-type(5) {
+	background-image: url(./../images/구성및위치.png);
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li:nth-of-type(6) {
+	background-image: url(./../images/독도지명.png);
+}
+section > .left_inr > .dokdo_information > nav > .slides-container > li:nth-of-type(7) {
+	background-image: url(./../images/독도인구현황.png);
+}
+
+section > .left_inr > .dokdo_information > nav > .slides-container > li > a {
+	display: block;
+	text-indent: -9999px;
+}
+
+/* 이전/다음버튼 */
+section > .left_inr > .dokdo_information > .dokdo_information_prevbtn {
+	position: absolute;
+	top: 50%;
+
+	display: block;
+	width: 35px;
+	height: 70px;
+	text-indent: -9999px;
+	background-image: url(./../images/btn_pic_prev.png);
+	background-size: cover;
+	background-position: -10px 0;
+}
+
+section > .left_inr > .dokdo_information > .dokdo_information_prevbtn:hover {
+	background-image: url(./../images/btn_pic_prev_on.png);
+}
+
+section > .left_inr > .dokdo_information > .dokdo_information_nextbtn {
+	position: absolute;
+	top: 50%;
+	right: 0;
+
+	display: block;
+	width: 35px;
+	height: 70px;
+	text-indent: -9999px;
+	background-image: url(./../images/btn_pic_next.png);
+	background-size: cover;
+	background-position: -10px 0;
+}
+
+section > .left_inr > .dokdo_information > .dokdo_information_nextbtn:hover {
+	background-image: url(./../images/btn_pic_next_on.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination {
+	position: absolute;
+	top: 513px;
+
+	display: flex;
+
+	width: 750px;
+	height: 160px;
+	background-image: url(./../images/kicon_bg.jpg);
+	background-size: cover;
+}
+section > .left_inr > .dokdo_information > .pagination > li {
+	position: absolute;
+	top: 17px;
+	width: 70px;
+	height: 70px;
+
+	background-size: cover;
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(1) {
+	left: 70px;
+	background-image: url(./../images/페이지네이션\ 독도icon_1.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(1):hover {
+	background-image: url(./../images/pagination_dokdo_active/pagination_dokdo_icon1_active.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(2) {
+	left: 155px;
+	background-image: url(./../images/페이지네이션\ 독도icon_2.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(2):hover {
+	background-image: url(./../images/pagination_dokdo_active/pagination_dokdo_icon2_active.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(3) {
+	left: 240px;
+	background-image: url(./../images/페이지네이션\ 독도icon_3.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(3):hover {
+	background-image: url(./../images/pagination_dokdo_active/pagination_dokdo_icon3_active.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(4) {
+	left: 325px;
+	background-image: url(./../images/페이지네이션\ 독도icon_4.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(4):hover {
+	background-image: url(./../images/pagination_dokdo_active/pagination_dokdo_icon4_active.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(5) {
+	left: 410px;
+	background-image: url(./../images/페이지네이션\ 독도icon_5.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(5):hover {
+	background-image: url(./../images/pagination_dokdo_active/pagination_dokdo_icon5_active.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(6) {
+	left: 495px;
+	background-image: url(./../images/페이지네이션\ 독도icon_6.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(6):hover {
+	background-image: url(./../images/pagination_dokdo_active/pagination_dokdo_icon6_active.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(7) {
+	left: 580px;
+	background-image: url(./../images/페이지네이션\ 독도icon_7.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(7):hover {
+	background-image: url(./../images/pagination_dokdo_active/pagination_dokdo_icon7_active.png);
+}
+
+section > .left_inr > .dokdo_information > .pagination > li > a {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	line-height: 15;
+	text-align: center;
+	color: #fff;
+	font-size: 11px;
+	font-family: "Nanum Gothic";
+}
+
+section > .left_inr > .dokdo_information > .pagination > li:nth-of-type(1):after {
+	position: absolute;
+	left: 10px;
+	top: 105px;
+
+	content: '독도주소 : 경상북도 울릉군 을릉읍 독도리 1-96';
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: sans-serif;
+
+	width: 500px;
+	height: 100px;
+}
+
+section > .left_inr > .dokdo_news {
+	position: absolute;
+	left: 150px;
+	top: 700px;
+
+	width: 750px;
+	height: 400px;
+	outline: 1px solid #f0f;
+}
+
+section > .left_inr > .dokdo_news > p {
+	position: absolute;
+	left: 25px;
+	top: 50px;
+	width: 400px;
+	background-image: url(./../images/dokdo_news/dokdomunhwa.png);
+	background-size: cover;
+}
+
+section > .left_inr > .dokdo_news > p > a {
+	display: block;
+	height: 300px;
+
+	text-indent: -9999px;
+}
+
+section > .left_inr > .dokdo_news > p > span {
+	position: absolute;
+	bottom: 0px;
+
+	display: block;
+	width: 100%;
+	height: 50px;
+
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 50px;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.8;
+}
+
+section > .left_inr > .dokdo_news > ul {
+	display: grid;
+}
+
+section > .left_inr > .dokdo_news > ul > li {
+}
+
+section > .left_inr > .dokdo_news > ul > li > a {
+}
+
+section > .left_inr > .dokdo_news > ul > li > a > span.pic {
+}
+
+section > .left_inr > .dokdo_news > ul > li > a > span.tit {
+}
+
+section > .left_inr > .dokdo_news > ul > li > a > span.info {
+}
+
+section > .right_inr {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	width: 30%;
+	height: 100%;
+	background-color: #f0f;
+}
+
+footer {
+	width: 100%;
+	height: 230px;
+	margin-top: 20px;
+	outline: 1px solid red;
+}
